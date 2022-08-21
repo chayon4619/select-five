@@ -111,9 +111,20 @@ function addToList(element, btnId) {
     // console.log(playerArray);
     // console.log(playerArray.length);
     const item = playerArray.length;
-    document.getElementById('added-player').innerText = item;
+    const playerAdd = document.getElementById('added-player')
+    playerAdd.innerText = item;
     // console.log(item);
-    selectedPlayer(playerArray);
+    // if (item > 5) {
+    //     alert('you can select only five players');
+    // }
+    // selectedPlayer(playerArray);
+    if (item <= 5) {
+        selectedPlayer(playerArray);
+    }
+    else {
+        alert('you can select only five players');
+        playerAdd.innerText = 5;
+    }
 
     // disabled 
     document.getElementById(btnId).disabled = true;
