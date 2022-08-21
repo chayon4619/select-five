@@ -36,32 +36,52 @@
                     <img class="w-full" src="images/Rectangle 144.png" alt="">
                     <h1 id="messi-name" class="text-white mt-4 my-4 font-semibold text-3xl">Lionel Messi</h1>
                     <p class="text-slate-300">Goal : 550 . Assist : 130</p>
-                    <button id="btn-messi"
+                    <button id="btn-messi" onclick="addToList(this,'btn-messi')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-4 mb-6 font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
                     <img class="w-full" src="images/Rectangle 144 (1).png" alt="">
                     <h1 id="neymar-name" class="text-white mt-4 my-4 font-semibold text-3xl">Neymar Jr</h1>
                     <p class="text-slate-300">Goal : 630 . Assist : 290</p>
-                    <button id="btn-neymar"
+                    <button id="btn-neymar" onclick="addToList(this,'btn-neymar')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-4 mb-6 font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
                     <img class="w-full" src="images/Rectangle 144 (2).png" alt="">
-                    <h1 class="text-white mt-4 my-4 font-semibold text-3xl">Kylian Mbappé</h1>
+                    <h1 id="mbappe-name" class="text-white mt-4 my-4 font-semibold text-3xl">Kylian Mbappé</h1>
                     <p class="text-slate-300">Goal : 150 . Assist : 90</p>
-                    <button
+                    <button id="btn-mbappe" onclick="addToList(this,'btn-mbappe')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-4 mb-6 font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
-                    <h1 class="text-slate-300 my-6 font-semibold text-3xl">Selected - V</h1>
-                    <ul class="text-slate-300">
-                        <li id="messi-list" class="my-4 list-item">1. </li>
-                        <li id="neymar-list" class="my-4 list-item">2. </li>
-                        <li class="my-4 list-item">3. </li>
-                        <li class="my-4 list-item">4. </li>
-                        <li class="my-4 list-item">5. </li>
-                    </ul>
+                    <h1 class="text-slate-300 my-6 font-semibold text-3xl">Selected - <span id="added-player">0</span>
+                    </h1>
+                    <!-- <ol id="player-list" class="text-slate-300">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol> -->
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
+                            <!-- head -->
+                            <!-- <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead> -->
+                            <tbody class="text-white" id="player-list">
+                                <!-- <tr>
+                                    <th>1</th>
+                                    <td>Cy Ganderton</td>
+                                    <td>Quality Control Specialist</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
@@ -71,21 +91,21 @@
                     <img class="w-full" src="images/Rectangle 144 (3).png" alt="">
                     <h1 class="text-white mt-4 my-4 font-semibold text-3xl">Vítor Machado</h1>
                     <p class="text-slate-300">Goal : 550 . Assist : 130</p>
-                    <button
+                    <button id="btn-victor" onclick="addToList(this,'btn-victor')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-8  font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
                     <img class="w-full" src="images/Rectangle 144 (4).png" alt="">
                     <h1 class="text-white mt-4 my-4 font-semibold text-3xl">Sergio Ramos</h1>
                     <p class="text-slate-300">Goal : 630 . Assist : 290</p>
-                    <button
+                    <button id="btn-ramos" onclick="addToList(this,'btn-ramos')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-8  font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
                     <img class="w-full" src="images/Rectangle 144 (5).png" alt="">
                     <h1 class="text-white mt-4 my-4 font-semibold text-3xl">Renato Sanches</h1>
                     <p class="text-slate-300">Goal : 150 . Assist : 90</p>
-                    <button
+                    <button id="btn-renato" onclick="addToList(this,'btn-renato')"
                         class="bg-cyan-600 hover:bg-cyan-400 px-12 py-2 rounded mt-8 font-semibold text-2xl text-white">Select</button>
                 </div>
                 <div class="border-doted bg-black border-2 text-center border-slate-600">
