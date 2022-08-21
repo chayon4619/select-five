@@ -44,3 +44,27 @@ function setElementValueById(elementId, value) {
     const setElement = document.getElementById(elementId);
     setElement.innerText = value;
 }
+
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    const perAmount = getInputValueById('per-amount');
+    const totalAmount = 5 * perAmount;
+    setElementValueById('player-cost', totalAmount);
+})
+
+// calculate total 
+document.getElementById('calculate-total').addEventListener('click', function () {
+    const perAmount = getInputValueById('per-amount');
+    const totalAmount = 5 * perAmount;
+    setElementValueById('player-cost', totalAmount);
+
+    // calculating total
+    // manager const
+    const managerCost = getInputValueById('manager-cost');
+    // coach cost
+    const coachCost = getInputValueById('coach-cost');
+    // total cost
+    const totalCost = totalAmount + managerCost + coachCost;
+    // set cost
+    setElementValueById('total-cost', totalCost);
+
+})
